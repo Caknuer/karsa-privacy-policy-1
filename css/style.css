@@ -1,0 +1,450 @@
+/* ==========================================================
+   KARSA WEBSITE
+   Version 1.0
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --primary:#C62828;
+    --primary-dark:#B71C1C;
+    --secondary:#F5F5F5;
+    --dark:#212529;
+    --white:#FFFFFF;
+    --text:#555555;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#fafafa;
+    color:var(--text);
+    line-height:1.8;
+
+}
+
+/* ===========================
+Navbar
+=========================== */
+
+.navbar{
+
+    transition:.3s;
+
+}
+
+.navbar-brand{
+
+    font-weight:700;
+    font-size:28px;
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    font-weight:500;
+    margin-left:15px;
+
+}
+
+.nav-link:hover{
+
+    color:#FFD54F !important;
+
+}
+
+/* ===========================
+Hero
+=========================== */
+
+header,
+.hero{
+
+    background:linear-gradient(135deg,#C62828,#B71C1C);
+
+    color:white;
+
+    padding:90px 20px;
+
+    text-align:center;
+
+}
+
+header h1,
+.hero h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+}
+
+header p,
+.hero p{
+
+    font-size:20px;
+
+    opacity:.95;
+
+}
+
+/* ===========================
+Section
+=========================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+section h2{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+Container
+=========================== */
+
+.container{
+
+    max-width:1140px;
+
+}
+
+/* ===========================
+Card
+=========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.card-body{
+
+    padding:35px;
+
+}
+
+/* ===========================
+Buttons
+=========================== */
+
+.btn{
+
+    border-radius:10px;
+
+    padding:12px 28px;
+
+    font-weight:600;
+
+}
+
+.btn-danger{
+
+    background:#C62828;
+
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    background:#A81414;
+
+}
+
+.btn-light{
+
+    color:#C62828;
+
+}
+
+/* ===========================
+Feature Icons
+=========================== */
+
+.card h1{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+Table
+=========================== */
+
+.table{
+
+    margin-top:20px;
+
+}
+
+.table th{
+
+    background:#C62828;
+
+    color:white;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+/* ===========================
+Lists
+=========================== */
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+Footer
+=========================== */
+
+footer{
+
+    background:#212529;
+
+    color:white;
+
+    padding:60px 20px;
+
+}
+
+footer h4{
+
+    margin-bottom:20px;
+
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+footer a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ===========================
+Shadow
+=========================== */
+
+.shadow{
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12)!important;
+
+}
+
+/* ===========================
+Images
+=========================== */
+
+img{
+
+    max-width:100%;
+
+}
+
+/* ===========================
+FAQ
+=========================== */
+
+.accordion-button{
+
+    font-weight:600;
+
+}
+
+/* ===========================
+Support Card
+=========================== */
+
+.support-card{
+
+    border-left:5px solid #C62828;
+
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:992px){
+
+header h1{
+
+font-size:42px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+padding:70px 20px;
+
+}
+
+header h1{
+
+font-size:34px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+.navbar-brand{
+
+font-size:24px;
+
+}
+
+.card-body{
+
+padding:25px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+header h1{
+
+font-size:28px;
+
+}
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+header p{
+
+font-size:16px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+}
+
+/* ===========================
+Animation
+=========================== */
+
+.fade-up{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

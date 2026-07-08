@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Karsa | Aplikasi Digital Koperasi Desa Merah Putih</title>
+
+<meta name="description"
+content="Karsa merupakan aplikasi digital Koperasi Desa Merah Putih yang memudahkan anggota dalam mengakses layanan koperasi secara cepat, aman dan transparan.">
+<meta name="keywords" content="Karsa, Koperasi Desa Merah Putih, Koperasi Digital, Flutter, Firebase, Supabase">
+
+<meta name="author" content="Koperasi Desa Merah Putih">
+
+<meta name="theme-color" content="#C62828">
+
+<meta property="og:title" content="Karsa">
+
+<meta property="og:description"
+content="Aplikasi Digital Koperasi Desa Merah Putih">
+
+<meta property="og:image"
+content="assets/logo.png">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:locale"
+content="id_ID">
+
+<link rel="icon"
+href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow">
+
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+
+<img
+src="assets/logo.png"
+height="45"
+class="me-2"
+alt="Logo Karsa - Koperasi Desa Merah Putih">
+
+<span class="fw-bold fs-4">
+
+KARSA
+
+</span>
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbar">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link" href="#about">
+
+Tentang
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#features">
+
+Fitur
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="terms-and-conditions.html">
+
+Terms
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+
+href="support.html">
+
+Support
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="bg-danger text-white py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1 class="display-4 fw-bold">
+
+KARSA
+
+</h1>
+
+<h3 class="mb-4">
+
+Aplikasi Digital
+
+Koperasi Desa Merah Putih
+
+</h3>
+
+<p class="lead">
+
+Transformasi digital koperasi yang memudahkan anggota mengakses layanan kapan saja dan dimana saja.
+
+</p>
+
+<a href="privacy-policy.html"
+class="btn btn-light btn-lg mt-3">
+
+Privacy Policy
+
+</a>
+
+<a href="#"
+class="btn btn-outline-light btn-lg mt-3">
+
+Google Play
+
+</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img
+src="assets/logo.png"
+class="img-fluid"
+style="max-height:550px;"
+alt="Preview Karsa - Aplikasi Digital Koperasi Desa Merah Putih">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-12">
+
+<h2 class="text-center mb-5">
+
+Tentang Karsa
+
+</h2>
+
+<p>
+
+Karsa merupakan aplikasi digital yang dikembangkan untuk membantu anggota Koperasi Desa Merah Putih memperoleh pelayanan koperasi secara cepat, aman, transparan, dan mudah digunakan.
+
+</p>
+
+<p>
+
+Melalui aplikasi ini anggota dapat melihat informasi koperasi, mengelola simpanan, melakukan penarikan, membaca berita terbaru, menerima pengumuman serta memonitor riwayat transaksi secara realtime.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<section id="features" class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+
+Fitur Utama
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card border-0 shadow h-100">
+
+<div class="card-body text-center">
+
+<h1>🔐</h1>
+
+<h4>Login Aman</h4>
+
+<p>
+
+Firebase Authentication menjaga keamanan akun pengguna.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card border-0 shadow h-100">
+
+<div class="card-body text-center">
+
+<h1>💰</h1>
+
+<h4>Simpanan</h4>
+
+<p>
+
+Kelola simpanan anggota dengan mudah.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card border-0 shadow h-100">
+
+<div class="card-body text-center">
+
+<h1>📤</h1>
+
+<h4>Penarikan</h4>
+
+<p>
+
+Ajukan penarikan langsung melalui aplikasi.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card border-0 shadow h-100">
+
+<div class="card-body text-center">
+
+<h1>📰</h1>
+
+<h4>Berita</h4>
+
+<p>
+
+Informasi terbaru koperasi.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card border-0 shadow h-100">
+
+<div class="card-body text-center">
+
+<h1>🔔</h1>
+
+<h4>Notifikasi</h4>
+
+<p>
+
+Dapatkan informasi penting secara realtime.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card border-0 shadow h-100">
+
+<div class="card-body text-center">
+
+<h1>👤</h1>
+
+<h4>Profil</h4>
+
+<p>
+
+Kelola data diri anggota dengan mudah.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Technology -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+
+Teknologi
+
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h4>Flutter</h4>
+
+</div>
+
+<div class="col-md-3">
+
+<h4>Firebase</h4>
+
+</div>
+
+<div class="col-md-3">
+
+<h4>Supabase</h4>
+
+</div>
+
+<div class="col-md-3">
+
+<h4>Node.js</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="bg-danger text-white py-5">
+
+<div class="container text-center">
+
+<h2>
+
+Mulai Gunakan Karsa
+
+</h2>
+
+<p>
+
+Nikmati kemudahan layanan koperasi secara digital.
+
+</p>
+
+<a href="#"
+class="btn btn-light btn-lg">
+
+Download di Google Play
+
+</a>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<h3>KARSA</h3>
+
+<p>
+
+Aplikasi Digital Koperasi Desa Merah Putih.
+
+</p>
+
+</div>
+
+<div class="col-md-6">
+
+<h5>Menu</h5>
+
+<ul class="list-unstyled">
+
+<li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+
+<li><a href="terms-and-conditions.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+
+<div>
+	<a href="index.html" class="text-white text-decoration-none fw-bold">Karsa</a> – Koperasi Desa Merah Putih
+</div>
+
+<div class="mt-2">
+	<a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a>
+	&nbsp;•&nbsp;
+	<a href="terms-and-conditions.html" class="text-white text-decoration-none">Terms & Conditions</a>
+	&nbsp;•&nbsp;
+	<a href="support.html" class="text-white text-decoration-none">Support</a>
+</div>
+
+<div class="mt-2">© 2026 Karsa – Koperasi Desa Merah Putih. All Rights Reserved.</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
